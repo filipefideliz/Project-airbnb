@@ -1,0 +1,25 @@
+{
+  "name": "airbnb-maps",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/filipefideliz/Project-airbnb.git"
+  },
+  "keywords": [
+    "filipe"
+  ],
+  "author": "filipe cesar",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/filipefideliz/Project-airbnb/issues"
+  },
+  "homepage": "https://github.com/filipefideliz/Project-airbnb#readme",
+  "dependencies": {
+    "leaflet": "^1.7.1"
+  }
+}

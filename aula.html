@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Airbnb</title>
+    <link rel="stylesheet" href="node_modules/leaflet/dist/leaflet.css">
+    <style>
+        #map {
+            width: 800px;
+            height: 400px;
+        }
+    </style>
+</head>
+<body>
+    <div id="map"></div>
+    <script src="/node_modules/leaflet/dist/leaflet.js"></script>
+    <script>
+        const L = window.L || {};
+        const $map = document.getElementById('map');
+
+        const zoom = 13;
+
+        const mapInstance = L.map($map).setView([-27.588183494013148, -48.50627298921619], zoom);
+
+        L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png',{
+            maxZoom: 18
+        }).addTo(mapInstance);
+    </script>
+</body>
+</html>
